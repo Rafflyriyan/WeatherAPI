@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  background: #f1f8ff;
+  font-family: sans-serif;
+}
+
+header {
+  text-align: center;
+  color: #79a0c4;
+}
+
+.content {
+  padding: 30px;
+  border-top: 2px solid #79a0c4;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.search-field {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-field input {
+  padding: 10px;
+  width: 40%;
+  outline: 1px solid #79a0c4;
+  border: none;
+  margin-right: 8px;
+  border-radius: 2px;
+}
+
+.search-field button {
+  padding: 10px;
+  width: 12%;
+  background-color: #d6eafc;
+  border: 1px solid #79a0c4;
+  color: #606060;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.weather-container {
+  text-align: center;
+  width: 25%;
+  margin: 0 auto;
+  background-color: #79b1d0;
+  color: #f9fbfe;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.search-title {
+  color: #606060;
+  font-size: 20px;
+}
+
+#city-description {
+  text-align: center;
+}
+
+#current-weather {
+  margin: 30px 0;
+}
+
+#weather-forecast {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.weather-image {
+  width: 30%;
+}
+
+#loader {
+  display: none;
+  text-indent: -9999em;
+  margin: 88px auto;
+  position: relative;
+  font-size: 11px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+#loader,
+#loader:before,
+#loader:after {
+  background: #79a0c4;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+#loader:before,
+#loader:after {
+  position: absolute;
+  top: 0;
+  content: "";
+}
+#loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+#loader:after {
+  left: 1.5em;
+}
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0 #79a0c4;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em #79a0c4;
+    height: 5em;
+  }
+}
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0 #79a0c4;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em #79a0c4;
+    height: 5em;
+  }
+}
